@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ruang Perkenalan Diri</title>
+
+  <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+</head>
+
+<body>
+
+  <a-scene>
+
+    <!-- LANTAI -->
+    <a-plane
+      position="0 0 -4"
+      rotation="-90 0 0"
+      width="10"
+      height="10"
+      color="#B8D8E8">
+    </a-plane>
+
+    <!-- LANGIT -->
+    <a-sky color="#E8DDF5"></a-sky>
+
+    <!-- TEKS PERKENALAN -->
+    <a-text
+      value="HALO, SELAMAT DATANG!"
+      position="0 3 -4"
+      align="center"
+      color="#333333"
+      width="7">
+    </a-text>
+
+    <a-text
+      value="Nama: Dhien Zhafira"
+      position="0 2.4 -4"
+      align="center"
+      color="#333333"
+      width="6">
+    </a-text>
+
+    <a-text
+      value="NIM: 2309020359"
+      position="0 2 -4"
+      align="center"
+      color="#333333"
+      width="6">
+    </a-text>
+
+    <!-- KUBUS BERPUTAR -->
+    <a-box
+      position="-2 1 -4"
+      color="#FF6B6B"
+      rotation="0 0 0"
+      animation="property: rotation;
+      to: 0 360 0;
+      loop: true;
+      dur: 6000;
+      easing: linear">
+    </a-box>
+
+    <!-- BOLA -->
+    <a-sphere
+      position="2 1.2 -4"
+      radius="0.7"
+      color="#FFD166">
+    </a-sphere>
+
+    <!-- TABUNG -->
+    <a-cylinder
+      position="-1 0.7 -3"
+      radius="0.4"
+      height="1.4"
+      color="#06D6A0">
+    </a-cylinder>
+
+    <!-- KERUCUT -->
+    <a-cone
+      position="1 0.8 -3"
+      radius-bottom="0.6"
+      height="1.5"
+      color="#118AB2">
+    </a-cone>
+
+  </a-scene>
+
+</body>
+</html>
